@@ -39,8 +39,26 @@ The development server will start at `http://localhost:8001`.
 
 Publishing to Web:
 
-- https://docs.expo.dev/guides/publishing-websites/
+1. eas login
+2. npx expo export --platform web
+3. eas deploy --prod
 
-Deploying with EAS:
-https://docs.expo.dev/eas/hosting/get-started/
-https://www.youtube.com/watch?v=NaKsfWciJLo
+Deploying to Android (DRAFT):
+
+1. eas login
+2. npx expo export --platform android
+3. eas build --platform android
+4. eas submit --platform android
+
+Deploying to iOS (DRAFT):
+
+1. eas login
+2. npx expo export --platform ios
+3. eas build --platform ios
+4. eas submit --platform ios
+
+Web deployment with EAS:
+
+- https://docs.expo.dev/guides/publishing-websites/
+- https://docs.expo.dev/eas/hosting/get-started/
+- https://www.youtube.com/watch?v=NaKsfWciJLo
