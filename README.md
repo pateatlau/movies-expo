@@ -39,9 +39,10 @@ The development server will start at `http://localhost:8001`.
 
 Publishing to Web:
 
-1. eas login
-2. npx expo export --platform web
-3. eas deploy --prod
+1. eas login (1 time only)
+2. eas init --id 0183765d-515a-4cd8-9728-1e969f485fcc (1 time only)
+3. npx expo export --platform web
+4. eas deploy --prod
 
 Deploying to Android (DRAFT):
 

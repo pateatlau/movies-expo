@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "rn-movie-app",
-    "slug": "rn-movie-app",
+    "slug": "movies",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/lalding.jpg",
@@ -42,8 +42,9 @@
         "origin": false
       },
       "eas": {
-        "projectId": "23ce844d-d65e-48a7-b5b8-8d56a1965e34"
+        "projectId": "0183765d-515a-4cd8-9728-1e969f485fcc"
       }
-    }
+    },
+    "owner": "patea"
   }
 }
