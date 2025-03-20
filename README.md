@@ -34,3 +34,13 @@ The development server will start at `http://localhost:8001`.
 - Select a to run the app on Android
 - Select i to run the app on iOS
 - Select w to run the app on web
+
+## References:
+
+Publishing to Web:
+
+- https://docs.expo.dev/guides/publishing-websites/
+
+Deploying with EAS:
+https://docs.expo.dev/eas/hosting/get-started/
+https://www.youtube.com/watch?v=NaKsfWciJLo
