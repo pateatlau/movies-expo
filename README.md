@@ -37,7 +37,9 @@ The development server will start at `http://localhost:8001`.
 
 ## References:
 
-Publishing to Web:
+### Publishing to Web:
+
+#### EAS
 
 1. eas login (1 time only)
 2. eas init --id 0183765d-515a-4cd8-9728-1e969f485fcc (1 time only)
@@ -63,3 +65,28 @@ Web deployment with EAS:
 - https://docs.expo.dev/guides/publishing-websites/
 - https://docs.expo.dev/eas/hosting/get-started/
 - https://www.youtube.com/watch?v=NaKsfWciJLo
+
+#### Vercel
+
+1. npm install -g vercel
+2. Create a vercel.json file in the root directory of your project with the following content:
+
+```
+{
+  "buildCommand": "expo export -p web",
+  "outputDirectory": "dist",
+  "devCommand": "expo",
+  "cleanUrls": true,
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/"
+    }
+  ]
+}
+```
+
+3. vercel
+4. vercel --prod
+5. Go to your vercel dashboard and select the project you just created. Configure the deployment settings as desired.
